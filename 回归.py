@@ -34,7 +34,7 @@ cmap='YlGnBu'
 with sns.axes_style("white"):
     ax = sns.heatmap(temp, mask=mask,cmap=plt.get_cmap(cmap), vmax=1, square=True)
 plt.show()
-#各项特征均同响应变量间存在相关性
+#检测共线性情况
 #方差膨胀因子
 def vif(df,col_i):
     '''
